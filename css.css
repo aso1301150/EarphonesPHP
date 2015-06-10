@@ -207,7 +207,7 @@ padding: 0px 0px 0px 0px;
   text-align: right;
   }
 
-#main form{
+#main .login_body form{
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -218,7 +218,7 @@ padding: 0px 0px 0px 0px;
   background: #fafafa;
   }
 
-#main .submit input{
+#main login_body{
   font-family: Arial;
   color: #ffffff;
   font-size: 16px;
