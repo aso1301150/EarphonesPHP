@@ -55,11 +55,26 @@
 <div class="category">
 <h2 class="h2_normal">新規会員登録:確認</h2>
 <div class="login_body">
-<?php print "お名前".$_POST["name"]."<br><br>" ?>
-<?php print "メールアドレス".$_POST["meado"]."<br><br>" ?>
-<?php print "電話番号".$_POST["tell1"]."-".$_POST["tell2"]."-".$_POST["tell3"]."<br><br>" ?>
-<?php print "郵便番号".$_POST["tokoro"]."-".$_POST["tokoro2"]."<br><br>" ?>
-<?php print "住所".$_POST["prefecture"].$_POST["address"]."<br><br>" ?>
+<?php $name=$_POST["name"] ?>
+<?php $meado=$_POST["meado"] ?>
+<?php $tell=$_POST["tell1"]."-".$_POST["tell2"]."-".$_POST["tell3"]?>
+<?php $tokoro=$_POST["tokoro"]."-".$_POST["tokoro2"] ?>
+<?php $juusyo=$_POST["prefecture"].$_POST["address"] ?>
+<?php print "お名前:".$name."<br><br>" ?>
+<?php print "メールアドレス:".$meado."<br><br>" ?>
+<?php print "電話番号:".$tell."<br><br>" ?>
+<?php print "郵便番号:".$tokoro."<br><br>" ?>
+<?php print "住所:".$juusyo."<br><br>" ?>
+
+<?php function touroku(){ ?>
+<?php $link = mysql_connect('localhost', 'root', 'root'); ?>
+<?php $sql = "INSERT INTO  (mail, name,addressnumber,address,phone) VALUES ($meado,$name,$tokoro,$juusyo,$tell)"; ?>
+<?php mysql_query($sql); ?>
+<?php }?>
+<form>
+ <input type="button" value="上記の内容で登録する" onclick="<?php touroku() ?>">
+ </form>
+
 
 </div>
 </div>
