@@ -57,7 +57,8 @@
 
 <div class="box2">
 <h3>商品001</h3>
-<div class="box-img-left2"><img src="images/250.gif" width="250" height="120" /></div>
+<div class="box-img-left2">
+<img src="images/250.gif" width="250" height="120" /></div>
 <div class="box2_text">型番<br />
 ￥価格</div>
 <div class="box-btn2"><a href="#01">＞＞購入＞＞</a></div>
