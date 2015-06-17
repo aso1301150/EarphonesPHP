@@ -60,7 +60,7 @@
 <?php $tell=$_POST["tell1"]."-".$_POST["tell2"]."-".$_POST["tell3"]?>
 <?php $tokoro=$_POST["tokoro"]."-".$_POST["tokoro2"] ?>
 <?php $juusyo=$_POST["prefecture"].$_POST["address"] ?>
-<?php print "お名前:".$name."<br><br>" ?>
+<?php print "名前:".$name."<br><br>" ?>
 <?php print "メールアドレス:ppp".$meado."<br><br>" ?>
 <?php print "電話番号:".$tell."<br><br>" ?>
 <?php print "郵便番号:".$tokoro."<br><br>" ?>
