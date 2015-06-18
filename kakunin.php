@@ -55,27 +55,35 @@
 <div class="category">
 <h2 class="h2_normal">新規会員登録:確認</h2>
 <div class="login_body">
-<?php $name=$_POST["name"] ?>
-<?php $meado=$_POST["meado"] ?>
-<?php $tell=$_POST["tell1"]."-".$_POST["tell2"]."-".$_POST["tell3"]?>
-<?php $tokoro=$_POST["tokoro"]."-".$_POST["tokoro2"] ?>
-<?php $juusyo=$_POST["prefecture"].$_POST["address"] ?>
-<?php print "名前:".$name."<br><br>" ?>
-<?php print "メールアドレス:ppp".$meado."<br><br>" ?>
-<?php print "電話番号:".$tell."<br><br>" ?>
-<?php print "郵便番号:".$tokoro."<br><br>" ?>
-<?php print "住所:".$juusyo."<br><br>" ?>
+<?php session_start() ?>
 
-<?php function touroku(){ ?>
-<?php $link = mysql_connect('localhost', 'root', 'root'); ?>
-<?php $sql = "INSERT INTO  (mail, name,addressnumber,address,phone) VALUES ($meado,$name,$tokoro,$juusyo,$tell)"; ?>
-<?php mysql_query($sql); ?>
-<?php }?>
-<form>
- <input type="button" value="上記の内容で登録する" onclick="<?php touroku() ?>">
- </form>
+<?php if(isset($_POST["ok"])){ ?>
+<?php $link = mysqli_connect('localhost', 'root', 'root'); ?>
+<?php mysqli_select_db($link,'earphones'); ?>
+<?php $sql = "INSERT INTO member(mail, name,addressnumber,address,phone) VALUES ('".$_SESSION["meado"]."','".$_SESSION["name"]."','".$_SESSION["tokoro"]."','".$_SESSION["juusyo"]."','".$_SESSION["tell"]."')"; ?>
+<?php mysqli_query($link,$sql); ?>
+<?php $sql = "INSERT INTO login(mail,password) VALUES ('".$_SESSION["meado"]."','".$_SESSION["pass"]."')"; ?>
+<?php mysqli_query($link,$sql); ?>
+<?php session_destroy(); ?>
+<?php mysqli_close($link); ?>
+<?php print "登録完了";?>
+<?php } else {?>
 
-
+<?php $_SESSION["name"]=$_POST["name"] ?>
+<?php $_SESSION["meado"]=$_POST["meado"] ?>
+<?php $_SESSION["tell"]=$_POST["tell1"]."-".$_POST["tell2"]."-".$_POST["tell3"]?>
+<?php $_SESSION["tokoro"]=$_POST["tokoro"]."-".$_POST["tokoro2"] ?>
+<?php $_SESSION["juusyo"]=$_POST["prefecture"].$_POST["address"] ?>
+<?php $_SESSION["pass"]=$_POST["pass"] ?>
+<?php print "名前:".$_SESSION["name"]."<br><br>" ?>
+<?php print "メールアドレス:".$_SESSION["meado"]."<br><br>" ?>
+<?php print "電話番号:".$_SESSION["tell"]."<br><br>" ?>
+<?php print "郵便番号:".$_SESSION["tokoro"]."<br><br>" ?>
+<?php print "住所:".$_SESSION["juusyo"]."<br><br>" ?>
+<?php } ?>
+<form action="" method="post">
+ <input type="submit" value="上記の内容で登録する" name="ok" id="ok">
+</form>
 </div>
 </div>
 <!-- 新規会員登録確認ここまで -->
