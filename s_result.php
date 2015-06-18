@@ -56,21 +56,28 @@
 <div class="entry_body">
 
 <div class="box2">
-<h3>商品001</h3>
+<?php $cnt = 0; //商品数
+$cnt2 = 1; //2列
+$htmltext;
+	if($cnt < 検索結果商品数){
+	if($cnt < 2) {
+		print "<h3>商品名</h3>"; //DBから
+		$img; //imgの出力
+	//DBから出力処理
+	$cnt++; //出力商品数カウント
+	$cnt2++;
+	}
+	$cnt2 = 1;
+}
+?>
+
 <div class="box-img-left2">
-<img src="images/250.gif" width="250" height="120" /></div>
+$<img src="images/250.gif" width="250" height="120" /></div>
 <div class="box2_text">型番<br />
 ￥価格</div>
 <div class="box-btn2"><a href="#01">＞＞購入＞＞</a></div>
 </div>
 
-<div class="box2">
-<h3>商品001</h3>
-<div class="box-img-left2"><img src="images/250.gif" width="250" height="120" /></div>
-<div class="box2_text">ホームページテンプレート<br />
-￥00,000-</div>
-<div class="box-btn2"><a href="#01">＞＞購入＞＞</a></div>
-</div>
 
 <br class="clear">
 
