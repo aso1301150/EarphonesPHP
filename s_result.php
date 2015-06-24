@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <meta charset="UTF-8">
-	<meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<link rel="stylesheet" href="css.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="css.css" type="text/css" />
 <title>Earphones</title>
 </head>
 <body>
@@ -14,12 +14,11 @@
 <div id="header">
 <!--タイトルロゴここから-->
 <div id="header_left2">I ❤ Earphones</div>
-<!--画像にしたい場合は上記の<div id="header_left2">を<div id="header_left">に変更して画像を入れてください-->
 <!--タイトルロゴここまで-->
 <div id="header_right">
 <ul>
-<li><a href="#">サイトマップ</a></li>
-<li><a href="#">お問い合わせ</a></li>
+<li><a href="sitemap.html">サイトマップ</a></li>
+<li><a href="imfomation.html">お問い合わせ</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div>
@@ -29,11 +28,11 @@
 <!--ヘッダーメニューここから-->
 <div id="menu">
 <ul>
-<li><a href="top.php">トップページ</a></li>
-<li><a href="#2">会員登録</a></li>
-<li><a href="search.php">商品検索</a></li>
+<li><a href="top.html">トップページ</a></li>
+<li><a href="k_touroku.html">会員登録</a></li>
+<li><a href="search.html">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="#5">会員情報</a></li>
+<li><a href="maypage.html">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -46,72 +45,57 @@
 <!--メインここから-->
 <div id="main">
 
-<img src="images/top.gif" width="600" height="250" />
-
 <!--パンくずリストここから-->
-<div class="pan"><a href="#01">トップ</a> ＞ <a href="#01">カテゴリ</a> ＞ パンくずリストは&lt;div class=&quot;pan&quot;&gt;で囲んでください（段落タグ&lt;p&gt;は使用しないでください）</div>
+<div class="pan"><a href="top.html">トップ</a> > <a href="search.html">検索</a></div>
 <!--パンくずリストここまで-->
 
+<!--二列BOXここから-->
+
 <div class="category">
-<h2 class="h2_normal">絞り込み検索</h2>
+<h2 class="h2_normal">検索結果</h2>
 <div class="entry_body">
 
 <div class="box2">
-<h3>メーカー</h3>
-<form method="post" action="s_rerult.php" class="contact">
-<p>
-<input type="checkbox" name="00000016" value="at">audio-techica</input></br>
-<input type="checkbox" name="m2" value="sony">SONY</input></br>
-<input type="checkbox" name="m3" value="Pana">Panasonic</input></br>
-<input type="checkbox" name="" value="ele">ELECOM</input></br>
-<input type="checkbox" name="m5" value="Pio">Pioneer</input></br>
-</p>
+<?php session_start() ?>
+<?php こっちに値を取ってくる?>
+<?php $link = mysqli_connect('localhost', 'root', 'root'); ?>
+<?php mysqli_select_db($link,'earphones'); ?>
+<?php $sql = "SELECT * FROM goods
+				WHERE " ?>
+
+
+<?php
+$cnt = 0; //商品数
+$cnt2 = 1; //2列
+$htmltext;
+if($cnt < 検索結果商品数){
+	if($cnt < 2) {
+		print "<h3>商品名</h3>"; //DBから	?>
+		<div class="box-img-left2">
+<?php 	$img; //imgの出力 ?>
+		<img src="images/250.gif" width="250" height="120" /></div>
+		<div class="box2_text">型番<br />
+<?php 	//DBから出力処理
+		$cnt++; //出力商品数カウント
+		$cnt2++;
+	}
+	$cnt2 = 1;
+}
+?>
+
+<div class="box-img-left2">
+$<img src="images/250.gif" width="250" height="120" /></div>
+<div class="box2_text">型番<br />
+￥価格</div>
+<div class="box-btn2"><a href="#01">＞＞購入＞＞</a></div>
 </div>
 
-<div class="box2">
-<h3>機能・特徴</h3>
-<form method="post" action="">
-<p>
-<input type="checkbox" name="f1" value="ie">インナーイヤー</input></br>
-<input type="checkbox" name="f2" value="ct">カナルタイプ</input></br>
-<input type="checkbox" name="f3" value="Bt">Bluetooth</input></br>
-<input type="checkbox" name="f4" value="sp">スポーツ</input></br>
-<input type="checkbox" name="f5" value="nc">ノイズキャンセル</input></br>
-</p>
-</div>
+
 <br class="clear">
 
-<div class="box2">
-<h3>価格</h3>
-<form method="post" action="">
-<p>
-<input type="checkbox" name="k1" value="k1">～&yen;1,000</input></br>
-<input type="checkbox" name="k2" value="k2">&yen;1,001～&yen;2,000</input></br>
-<input type="checkbox" name="k3" value="k3">&yen;2,001～&yen;3,000</input></br>
-<input type="checkbox" name="k4" value="k4">&yen;3,001～&yen;4,000</input></br>
-<input type="checkbox" name="k5" value="k5">&yen;4,001～</input></br>
-</p>
-</div>
-
-<div class="box2">
-<h3>カラー</h3>
-<form method="post" action="">
-<p>
-<input type="checkbox" name="c1" value="red">RED</input></br>
-<input type="checkbox" name="c2" value="blue">BLUE</input></br>
-<input type="checkbox" name="c3" value="green">GREEN</input></br>
-<input type="checkbox" name="c4" value="black">BLACK</input></br>
-<input type="checkbox" name="c5" value="other">OTHER</input></br>
-</p>
-</div>
-<br class="clear">
-
-<p><input type="submit" value="検索"></p>
-
-</form>
-
 </div>
 </div>
+<!--二列BOXここまで-->
 
 <div class="modoru"><a href="#top">ページ上に戻る</a></div>
 
@@ -124,8 +108,8 @@
 <div class="category">
 <h3>アカウント</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="login.php">ログイン</a></div>
-<div class="sub-btn"><a href="#">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="login.html">ログイン</a></div>
+<div class="sub-btn"><a href="frst.html">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -133,7 +117,7 @@
 <div class="category">
 <h3>お買い物かご</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">カートの中を見る</a></div>
+<div class="sub-btn"><a href="cart.html">カートの中を見る</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -154,14 +138,6 @@
   送料は全国一律500円になります。</p>
 </div>
 <div class="sub_bottom"></div>
-</div>
-
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
 </div>
 
 </div>
@@ -217,13 +193,6 @@
 <div class="sub_bottom"></div>
 </div>
 
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
 </div>
 <!--サイドメニュー2ここまで-->
 
