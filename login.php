@@ -30,7 +30,7 @@
 <!--ヘッダーメニューここから-->
 <div id="menu">
 <ul>
-<li><a href="top.html">トップページ</a></li>
+<li><a href="top.php">トップページ</a></li>
 <li><a href="#2">会員登録</a></li>
 <li><a href="search.html">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
@@ -50,7 +50,7 @@
 <img src="images/top.gif" width="600" height="250" />
 
 <!--パンくずリストここから-->
-<div class="pan"><a href="top.html">トップ</a> ＞ <a href="login.html">ログイン</a> </div>
+<div class="pan"><a href="top.php">トップ</a> ＞ <a href="login.php">ログイン</a> </div>
 <!--パンくずリストここまで-->
 
 <!-- ログイン -->

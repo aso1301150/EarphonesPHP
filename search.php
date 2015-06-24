@@ -29,9 +29,9 @@
 <!--ヘッダーメニューここから-->
 <div id="menu">
 <ul>
-<li><a href="top.html">トップページ</a></li>
+<li><a href="top.php">トップページ</a></li>
 <li><a href="#2">会員登録</a></li>
-<li><a href="search.html">商品検索</a></li>
+<li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
 <li><a href="#5">会員情報</a></li>
 </ul>
@@ -124,7 +124,7 @@
 <div class="category">
 <h3>アカウント</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="login.html">ログイン</a></div>
+<div class="sub-btn"><a href="login.php">ログイン</a></div>
 <div class="sub-btn"><a href="#">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>

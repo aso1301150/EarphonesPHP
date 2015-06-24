@@ -28,11 +28,11 @@
 <!--ヘッダーメニューここから-->
 <div id="menu">
 <ul>
-<li><a href="top.html">トップページ</a></li>
-<li><a href="k_touroku.html">会員登録</a></li>
-<li><a href="search.html">商品検索</a></li>
+<li><a href="top.php">トップページ</a></li>
+<li><a href="k_touroku.php">会員登録</a></li>
+<li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="maypage.html">会員情報</a></li>
+<li><a href="maypage.php">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -165,8 +165,8 @@
 <div class="category">
 <h3>アカウント</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="login.html">ログイン</a></div>
-<div class="sub-btn"><a href="frst.html">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="login.php">ログイン</a></div>
+<div class="sub-btn"><a href="frst.php">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -174,7 +174,7 @@
 <div class="category">
 <h3>お買い物かご</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="cart.html">カートの中を見る</a></div>
+<div class="sub-btn"><a href="cart.php">カートの中を見る</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>

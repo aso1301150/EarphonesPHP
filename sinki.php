@@ -30,7 +30,7 @@
 <!--ヘッダーメニューここから-->
 <div id="menu">
 <ul>
-<li><a href="top.html">トップページ</a></li>
+<li><a href="top.php">トップページ</a></li>
 <li><a href="#2">会員登録</a></li>
 <li><a href="#3">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
@@ -48,14 +48,14 @@
 <div id="main">
 
 <!--パンくずリストここから-->
-<div class="pan"><a href="top.html">トップ</a> ＞ <a href="login.html">ログイン</a> </div>
+<div class="pan"><a href="top.php">トップ</a> ＞ <a href="login.php">ログイン</a> </div>
 <!--パンくずリストここまで-->
 
 <!-- ログイン -->
 <div class="category">
 <h2 class="h2_normal">新規会員登録</h2>
 <div class="login_body">
-<form action="kakunin.html" method="post">
+<form action="kakunin.php" method="post">
 お名前
 <input type="text" name="name" size="25"><br><br>
 
