@@ -57,11 +57,20 @@
 
 <div class="box2">
 <?php session_start() ?>
-<?php こっちに値を取ってくる?>
+<?php	foreach( $_POST[m] as $value ){
+		$maker = $_SESSION[$value]; }
+		foreach( $_POST[f] as $value ){
+		$func = $_SESSION[$value];	}
+		foreach ( $_POST[k] as $value ){
+		$kakaku = $_SESSION[$value]; }?>
 <?php $link = mysqli_connect('localhost', 'root', 'root'); ?>
 <?php mysqli_select_db($link,'earphones'); ?>
-<?php $sql = "SELECT * FROM goods
-				WHERE " ?>
+<?php $sql = "SELECT * FROM goods WHERE categoryid=\".$func.\" and makerid=\".$maker.\" and price=\".$kakaku.\" "; ?>
+<?php $result = mysqli_query($link,$sql) ?>
+<?php $row = mysqli_fetch_assoc($result) ?>
+<?php $sql = "SELECT count(*) FROM goods WHERE categoryid=\"$func\" and makerid=\"$maker\" and price=\"$kakaku\" "; ?>
+<?php $result = mysqli_query($link,$sql) ?>
+<?php $row2 = mysqli_fetch_assoc($result) ?>
 
 
 <?php
@@ -70,7 +79,7 @@ $cnt2 = 1; //2列
 $htmltext;
 if($cnt < 検索結果商品数){
 	if($cnt < 2) {
-		print "<h3>商品名</h3>"; //DBから	?>
+		print "<h3>".$row[goods]."</h3>"; //DBから	?>
 		<div class="box-img-left2">
 <?php 	$img; //imgの出力 ?>
 		<img src="images/250.gif" width="250" height="120" /></div>
@@ -148,10 +157,8 @@ $<img src="images/250.gif" width="250" height="120" /></div>
 
 </div><!--"main2"-->
 
-<!--サイドメニュー2ここから-->
-<div id="sub2">
 <div class="category">
-<h3>メーカー</h3>
+<h3>Brand</h3>
 <div class="entry_body">
 <ul>
 <li><a href="#4">Audio-technica</a></li>
@@ -193,18 +200,19 @@ $<img src="images/250.gif" width="250" height="120" /></div>
 <div class="sub_bottom"></div>
 </div>
 
+<div align="center"><img src="images/188.gif" width="188" height="100" />
+
 </div>
-<!--サイドメニュー2ここまで-->
+<div class="soto">
+<p>&lt;div class=&quot;category&quot;&gt;と<br />
+  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
+</div>
 
 </div><!--"container"-->
 
 <!--フッターここから-->
 <div id="footer">
-<p><a href="#">運営会社</a>｜<a href="#">プライバシーポリシー</a>｜<a href="#">特定商取引法に基づく表記</a></p>
-<p>Copyright(C) ホームページ名 All Rights Reserved.</p>
-<!--ここから記述の変更、削除を禁止します。-->
-<p>Template design by <a href="http://homuten.com">homuten</a></p>
-<!--ここまで記述の変更、削除を禁止します。-->
+<div id="header_left2">I ❤ Earphones</div>
 </div>
 <!--フッターここまで-->
 

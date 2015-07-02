@@ -112,14 +112,6 @@
 <div class="sub_bottom"></div>
 </div>
 
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
-
 </div>
 
 <!--[if !IE]>サイドメニューここまで<![endif]-->
@@ -130,56 +122,8 @@
 
 <!--サイドメニュー2ここから-->
 <div id="sub2">
-<div class="category">
-<h3>Brand</h3>
-<div class="entry_body">
-<ul>
-<li><a href="#4">Audio-technica</a></li>
-<li><a href="#4">SONY</a></li>
-<li><a href="#4">Panasonic</a></li>
-<li><a href="#4">ELECOM</a></li>
-<li><a href="#4">Pioneer</a></li>
-</ul>
-</div>
-<div class="sub_bottom"></div>
-</div>
 
-<div class="category">
-<h3>機能・特徴</h3>
-<div class="entry_body">
-<ul>
-<li><a href="#4">インナーイヤー</a></li>
-<li><a href="#4">カナル型</a></li>
-<li><a href="#4">Bluetooth</a></li>
-<li><a href="#4">スポーツ</a></li>
-<li><a href="#4">ノイズキャンセル</a></li>
-</ul>
-</div>
-<div class="sub_bottom"></div>
-</div>
 
-<div class="category">
-<h3>coler</h3>
-<div class="entry_body">
-<ul>
-<li><a href="#4">red</a></li>
-<li><a href="#4">blue</a></li>
-<li><a href="#4">green</a></li>
-<li><a href="#4">black</a></li>
-<li><a href="#4">white</a></li>
-<li><a href="#4">other</a></li>
-</ul>
-</div>
-<div class="sub_bottom"></div>
-</div>
-
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
 </div>
 <!--サイドメニュー2ここまで-->
 
@@ -187,11 +131,7 @@
 
 <!--フッターここから-->
 <div id="footer">
-<p><a href="#">運営会社</a>｜<a href="#">プライバシーポリシー</a>｜<a href="#">特定商取引法に基づく表記</a></p>
-<p>Copyright(C) ホームページ名 All Rights Reserved.</p>
-<!--ここから記述の変更、削除を禁止します。-->
-<p>Template design by <a href="http://homuten.com">homuten</a></p>
-<!--ここまで記述の変更、削除を禁止します。-->
+<div id="header_left2">I ❤ Earphones</div>
 </div>
 <!--フッターここまで-->
 

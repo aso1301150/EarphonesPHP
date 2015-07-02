@@ -11,16 +11,14 @@
 
 <!--ヘッダーここから-->
 <a name="top" id="top"></a>
-<h1>ホームページテンプレート ECサイト、ネットショップ向け #017_green_3（見出しタグ&lt;h1&gt;を使用）</h1>
 <div id="header">
 <!--タイトルロゴここから-->
 <div id="header_left2">I ❤ Earphones</div>
-<!--画像にしたい場合は上記の<div id="header_left2">を<div id="header_left">に変更して画像を入れてください-->
 <!--タイトルロゴここまで-->
 <div id="header_right">
 <ul>
-<li><a href="#">サイトマップ</a></li>
-<li><a href="#">お問い合わせ</a></li>
+<li><a href="sitemap.php">サイトマップ</a></li>
+<li><a href="imfomation.php">お問い合わせ</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div>
@@ -31,10 +29,10 @@
 <div id="menu">
 <ul>
 <li><a href="top.php">トップページ</a></li>
-<li><a href="#2">会員登録</a></li>
-<li><a href="#3">商品検索</a></li>
+<li><a href="k_touroku.php">会員登録</a></li>
+<li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="#5">会員情報</a></li>
+<li><a href="maypage.php">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -47,26 +45,104 @@
 <!--メインここから-->
 <div id="main">
 
-<img src="images/top.gif" width="600" height="250" />
-
 <!--パンくずリストここから-->
-<div class="pan"><a href="top.html">トップ</a> ＞ <a href="login.php">ログイン</a> </div>
+<div class="pan"><a href="top.php">トップ</a></div>
 <!--パンくずリストここまで-->
 
-<!-- ログイン -->
 <div class="category">
-<h2 class="h2_normal">ログイン</h2>
-<div class="login_body">
-<form>
-e-mail
-<input type="text" name="name" size="40"><br><br>
-password
-<input type="text" name="pass" size="40">
-</form>
-</div>
-</div>
-<!-- ログインここまで -->
+<h2 class="h2_normal">購入確認</h2>
+<div class="entry_body">
 
+<form method="post" action="#" class="contact">
+
+<h3>※お間違いの無いようお願いいたします。</h3>
+<table border cellspacing=3 cellpadding=5>
+
+<tr>
+<th bgcolor="#ffe4c4"><label for="namae">お名前</label></th>
+<td>
+<span class="supplement">ーーーーーここにデータが入ってきます――――</span></td><br>
+</tr>
+
+<tr>
+<th  bgcolor="#ffe4c4"><label for="meado">メールアドレス</label></th>
+<td>
+<span class="supplement"></span></td><br>
+</tr>
+
+<tr>
+<th  bgcolor="#ffe4c4"><label for="tell">電話番号</label></th>
+<td> <span class="supplement"></span></td>
+</tr>
+
+<tr>
+<th  bgcolor="#ffe4c4" rowspan="3"><label for="tokoro">ご住所</label></th>
+<td><label for="tokoro">〒</label> <span class="supplement"></span></td>
+</tr>
+
+<tr>
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+<span class="supplement">ああああああああああ</span></td>
+</tr>
+
+</table>
+
+<p class="button"><input type="submit" value="修正する"></p>
+<br>
+
+
+<table border cellspacing=3 cellpadding=5>
+
+<colgroup class="item"></colgroup>
+<colgroup span="4" class="data"></colgroup>
+
+<thead>
+<tr>
+<th bgcolor="#ffe4c4">商　　品</th>
+<th bgcolor="#ffe4c4">単価</th>
+<th bgcolor="#ffe4c4">個数</th>
+<th bgcolor="#ffe4c4">ポイント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>画像が入ってきまあす　商品名きます</td>
+<td>単価入る</td>
+<td>個数はいる</td>
+<td>ポイントはいる</td>
+</tr>
+</tbody>
+
+</table>
+</form>
+
+
+<h3>合計点数○点　合計：￥００００</h3>
+<p>購入後獲得ポイント：００ポイント（会員のみ）</p>
+
+<p>※現在のポイントは００ポイントです<br>
+1ポイント1円で御利用いただけます。</p>
+
+<input type="text" name="example1" value="ポイント数入力">ポイント使う<br>
+<br>
+※ポイントを利用する場合、必ず再計算を行ってください。
+<p class="button"><input type="submit" value="再計算"></p>
+<br>
+<h3>最終合計：￥００００</h3>
+<br>
+<input type="button" value="　　上記の内容で購入する　　" style="background-color:#ff0000;">
+<br>
+
+
+
+</div>
+</div>
 
 <div class="modoru"><a href="#top">ページ上に戻る</a></div>
 
@@ -79,8 +155,8 @@ password
 <div class="category">
 <h3>アカウント</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">ログイン</a></div>
-<div class="sub-btn"><a href="#">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="login.php">ログイン</a></div>
+<div class="sub-btn"><a href="frst.php">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -88,7 +164,7 @@ password
 <div class="category">
 <h3>お買い物かご</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">カートの中を見る</a></div>
+<div class="sub-btn"><a href="cart.php">カートの中を見る</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -111,13 +187,6 @@ password
 <div class="sub_bottom"></div>
 </div>
 
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
 
 </div>
 
@@ -171,14 +240,6 @@ password
 </div>
 <div class="sub_bottom"></div>
 </div>
-
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
 </div>
 <!--サイドメニュー2ここまで-->
 
@@ -186,15 +247,9 @@ password
 
 <!--フッターここから-->
 <div id="footer">
-<p><a href="#">運営会社</a>｜<a href="#">プライバシーポリシー</a>｜<a href="#">特定商取引法に基づく表記</a></p>
-<p>Copyright(C) ホームページ名 All Rights Reserved.</p>
-<!--ここから記述の変更、削除を禁止します。-->
-<p>Template design by <a href="http://homuten.com">homuten</a></p>
-<!--ここまで記述の変更、削除を禁止します。-->
+<div id="header_left2">I ❤ Earphones</div>
 </div>
 <!--フッターここまで-->
-
-
 
 </body>
 </html>

@@ -45,8 +45,6 @@
 <!--メインここから-->
 <div id="main">
 
-<img src="images/logo.png" width="600" height="250" />
-
 <!--パンくずリストここから-->
 <div class="pan"><a href="top.html">トップ</a></div>
 <!--パンくずリストここまで-->
@@ -197,6 +195,7 @@
 <div class="sub_bottom"></div>
 </div>
 
+
 </div>
 
 <!--[if !IE]>サイドメニューここまで<![endif]-->
@@ -208,7 +207,7 @@
 <!--サイドメニュー2ここから-->
 <div id="sub2">
 <div class="category">
-<h3>メーカー</h3>
+<h3>Brand</h3>
 <div class="entry_body">
 <ul>
 <li><a href="#4">Audio-technica</a></li>
@@ -249,7 +248,6 @@
 </div>
 <div class="sub_bottom"></div>
 </div>
-
 </div>
 <!--サイドメニュー2ここまで-->
 
@@ -257,11 +255,7 @@
 
 <!--フッターここから-->
 <div id="footer">
-<p><a href="#">運営会社</a>｜<a href="#">プライバシーポリシー</a>｜<a href="#">特定商取引法に基づく表記</a></p>
-<p>Copyright(C) ホームページ名 All Rights Reserved.</p>
-<!--ここから記述の変更、削除を禁止します。-->
-<p>Template design by <a href="http://homuten.com">homuten</a></p>
-<!--ここまで記述の変更、削除を禁止します。-->
+<div id="header_left2">I ❤ Earphones</div>
 </div>
 <!--フッターここまで-->
 

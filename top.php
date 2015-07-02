@@ -16,10 +16,6 @@
 <div id="header_left2">I ❤ Earphones</div>
 <!--タイトルロゴここまで-->
 <div id="header_right">
-<ul>
-<li><a href="sitemap.php">サイトマップ</a></li>
-<li><a href="imfomation.php">お問い合わせ</a></li>
-</ul>
 </div>
 <div style="clear:both;"></div>
 </div>
@@ -56,27 +52,27 @@
 <h2 class="h2_normal">新商品</h2>
 <div class="entry_body">
 <div class="box3">
-<h3>商品001</h3>
-<div class="box-img-left3"><img src="images/158.gif" width="158" height="100" /></div>
-<div class="box2_text">ホームページテンプレート<br />
-￥00,000-</div>
-<div class="box-btn3"><a href="#01">＞＞ダウンロード＞＞</a></div>
+<h3>PHILIPS SHQ1305</h3>
+<div class="box-img-left3"><img src="images/shq1305.jpg" width="158" height="100" /></div>
+<div class="box2_text">激しいエクササイズ中でも、スタビライザー機能を備えたイヤピースが快適な装着感を実現。<br />
+￥3,340-</div>
+<div class="box-btn3"><a href="#01">＞＞　購　入　＞＞</a></div>
 </div>
 
 <div class="box3">
-<h3>商品001</h3>
-<div class="box-img-left3"><img src="images/158.gif" width="158" height="100" /></div>
-<div class="box2_text">ホームページテンプレート<br />
-￥00,000-</div>
-<div class="box-btn3"><a href="#01">＞＞ダウンロード＞＞</a></div>
+<h3>PHILIPS SHE3010</h3>
+<div class="box-img-left3"><img src="images/she3010.jpg" width="158" height="100" /></div>
+<div class="box2_text">イヤーキャップと本体の両方にラバー素材を採用し、ソフトで心地よい装着感を実現<br />
+￥1,380-</div>
+<div class="box-btn3"><a href="#01">＞＞　購　入　＞＞</a></div>
 </div>
 
 <div class="box3">
-<h3>商品001</h3>
-<div class="box-img-left3"><img src="images/158.gif" width="158" height="100" /></div>
-<div class="box2_text">ホームページテンプレート<br />
-￥00,000-</div>
-<div class="box-btn3"><a href="#01">＞＞ダウンロード＞＞</a></div>
+<h3>ELECOM EHP-TV...</h3>
+<div class="box-img-left3"><img src="images/ehp-tv.jpg" width="158" height="100" /></div>
+<div class="box2_text">テレビ用ロングコード採用インナーイヤー型イヤホン(片耳タイプ/3m)<br/><br/>
+￥1,160-</div>
+<div class="box-btn3"><a href="#01">＞＞　購　入　＞＞</a></div>
 </div>
 
 <br class="clear">
@@ -147,6 +143,7 @@
 <div class="sub_bottom"></div>
 </div>
 
+
 </div>
 
 <!--[if !IE]>サイドメニューここまで<![endif]-->
@@ -158,7 +155,7 @@
 <!--サイドメニュー2ここから-->
 <div id="sub2">
 <div class="category">
-<h3>メーカー</h3>
+<h3>Brand</h3>
 <div class="entry_body">
 <ul>
 <li><a href="#4">Audio-technica</a></li>
@@ -199,7 +196,6 @@
 </div>
 <div class="sub_bottom"></div>
 </div>
-
 </div>
 <!--サイドメニュー2ここまで-->
 
@@ -207,11 +203,7 @@
 
 <!--フッターここから-->
 <div id="footer">
-<p><a href="#">運営会社</a>｜<a href="#">プライバシーポリシー</a>｜<a href="#">特定商取引法に基づく表記</a></p>
-<p>Copyright(C) ホームページ名 All Rights Reserved.</p>
-<!--ここから記述の変更、削除を禁止します。-->
-<p>Template design by <a href="http://homuten.com">homuten</a></p>
-<!--ここまで記述の変更、削除を禁止します。-->
+<div id="header_left2">I ❤ Earphones</div>
 </div>
 <!--フッターここまで-->
 

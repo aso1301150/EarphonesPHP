@@ -30,10 +30,10 @@
 <div id="menu">
 <ul>
 <li><a href="top.php">トップページ</a></li>
-<li><a href="#2">会員登録</a></li>
+<li><a href="k_touroku.php">会員登録</a></li>
 <li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="#5">会員情報</a></li>
+<li><a href="mypage.php">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -46,10 +46,8 @@
 <!--メインここから-->
 <div id="main">
 
-<img src="images/top.gif" width="600" height="250" />
-
 <!--パンくずリストここから-->
-<div class="pan"><a href="#01">トップ</a> ＞ <a href="#01">カテゴリ</a> ＞ パンくずリストは&lt;div class=&quot;pan&quot;&gt;で囲んでください（段落タグ&lt;p&gt;は使用しないでください）</div>
+<div class="pan"><a href="#01">トップ</a> ＞ <a href="#01">カテゴリ</a> ＞ </div>
 <!--パンくずリストここまで-->
 
 <div class="category">
@@ -58,53 +56,41 @@
 
 <div class="box2">
 <h3>メーカー</h3>
-<form method="post" action="s_rerult.php" class="contact">
+<form method="post" action="s_result.php" class="contact">
 <p>
-<input type="checkbox" name="00000016" value="at">audio-techica</input></br>
-<input type="checkbox" name="m2" value="sony">SONY</input></br>
-<input type="checkbox" name="m3" value="Pana">Panasonic</input></br>
-<input type="checkbox" name="" value="ele">ELECOM</input></br>
-<input type="checkbox" name="m5" value="Pio">Pioneer</input></br>
+<input type="checkbox" name="m[]" value="00000016">audio-techica</input></br>
+<input type="checkbox" name="m[]" value="sony">SONY</input></br>
+<input type="checkbox" name="m[]" value="Pana">Panasonic</input></br>
+<input type="checkbox" name="m[]" value="00000023">ELECOM</input></br>
+<input type="checkbox" name="m[]" value="Pio">Pioneer</input></br>
 </p>
 </div>
 
 <div class="box2">
 <h3>機能・特徴</h3>
-<form method="post" action="">
 <p>
-<input type="checkbox" name="f1" value="ie">インナーイヤー</input></br>
-<input type="checkbox" name="f2" value="ct">カナルタイプ</input></br>
-<input type="checkbox" name="f3" value="Bt">Bluetooth</input></br>
-<input type="checkbox" name="f4" value="sp">スポーツ</input></br>
-<input type="checkbox" name="f5" value="nc">ノイズキャンセル</input></br>
+<input type="checkbox" name="f[]" value="00000002">インナーイヤー</input></br>
+<input type="checkbox" name="f[]" value="00000001">カナルタイプ</input></br>
+<input type="checkbox" name="f[]" value="00000003">Bluetooth</input></br>
+<input type="checkbox" name="f[]" value="00000005">スポーツ</input></br>
+<input type="checkbox" name="f[]" value="00000004">ノイズキャンセル</input></br>
 </p>
 </div>
 <br class="clear">
 
 <div class="box2">
 <h3>価格</h3>
-<form method="post" action="">
 <p>
-<input type="checkbox" name="k1" value="k1">～&yen;1,000</input></br>
-<input type="checkbox" name="k2" value="k2">&yen;1,001～&yen;2,000</input></br>
-<input type="checkbox" name="k3" value="k3">&yen;2,001～&yen;3,000</input></br>
-<input type="checkbox" name="k4" value="k4">&yen;3,001～&yen;4,000</input></br>
-<input type="checkbox" name="k5" value="k5">&yen;4,001～</input></br>
+<input type="checkbox" name="k[]" value=" < 1000">～&yen;1,000</input></br>
+<input type="checkbox" name="k[]" value=" > 1001 and price =< 2000">&yen;1,001～&yen;2,000</input></br>
+<input type="checkbox" name="k[]" value=" > 2001 and price =< 3000">&yen;2,001～&yen;3,000</input></br>
+<input type="checkbox" name="k[]" value=" > 3001 and price =< 4000">&yen;3,001～&yen;4,000</input></br>
+<input type="checkbox" name="k[]" value=" > 4000">&yen;4,001～</input></br>
 </p>
 </div>
 
-<div class="box2">
-<h3>カラー</h3>
-<form method="post" action="">
-<p>
-<input type="checkbox" name="c1" value="red">RED</input></br>
-<input type="checkbox" name="c2" value="blue">BLUE</input></br>
-<input type="checkbox" name="c3" value="green">GREEN</input></br>
-<input type="checkbox" name="c4" value="black">BLACK</input></br>
-<input type="checkbox" name="c5" value="other">OTHER</input></br>
-</p>
-</div>
-<br class="clear">
+
+<br class="clear" >
 
 <p><input type="submit" value="検索"></p>
 
@@ -125,7 +111,7 @@
 <h3>アカウント</h3>
 <div class="entry_body">
 <div class="sub-btn"><a href="login.php">ログイン</a></div>
-<div class="sub-btn"><a href="#">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="frst.php">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -133,7 +119,7 @@
 <div class="category">
 <h3>お買い物かご</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">カートの中を見る</a></div>
+<div class="sub-btn"><a href="cart.php">カートの中を見る</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -156,13 +142,6 @@
 <div class="sub_bottom"></div>
 </div>
 
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
 
 </div>
 
@@ -175,7 +154,7 @@
 <!--サイドメニュー2ここから-->
 <div id="sub2">
 <div class="category">
-<h3>メーカー</h3>
+<h3>Brand</h3>
 <div class="entry_body">
 <ul>
 <li><a href="#4">Audio-technica</a></li>
@@ -216,14 +195,6 @@
 </div>
 <div class="sub_bottom"></div>
 </div>
-
-<div align="center"><img src="images/188.gif" width="188" height="100" />
-
-</div>
-<div class="soto">
-<p>&lt;div class=&quot;category&quot;&gt;と<br />
-  &lt;div class=&quot;entry_body&quot;&gt;の外にテキストを入れたい時には&lt;div class=&quot;soto&quot;&gt;で囲んでください</p>
-</div>
 </div>
 <!--サイドメニュー2ここまで-->
 
@@ -231,11 +202,7 @@
 
 <!--フッターここから-->
 <div id="footer">
-<p><a href="#">運営会社</a>｜<a href="#">プライバシーポリシー</a>｜<a href="#">特定商取引法に基づく表記</a></p>
-<p>Copyright(C) ホームページ名 All Rights Reserved.</p>
-<!--ここから記述の変更、削除を禁止します。-->
-<p>Template design by <a href="http://homuten.com">homuten</a></p>
-<!--ここまで記述の変更、削除を禁止します。-->
+<div id="header_left2">I ❤ Earphones</div>
 </div>
 <!--フッターここまで-->
 
