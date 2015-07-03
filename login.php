@@ -11,7 +11,7 @@
 
 <!--ヘッダーここから-->
 <a name="top" id="top"></a>
-<h1>ホームページテンプレート ECサイト、ネットショップ向け #017_green_3（見出しタグ&lt;h1&gt;を使用）</h1>
+
 <div id="header">
 <!--タイトルロゴここから-->
 <div id="header_left2">I ❤ Earphones</div>
@@ -31,10 +31,10 @@
 <div id="menu">
 <ul>
 <li><a href="top.php">トップページ</a></li>
-<li><a href="#2">会員登録</a></li>
-<li><a href="search.html">商品検索</a></li>
+<li><a href="k_touroku.php">会員登録</a></li>
+<li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="#5">会員情報</a></li>
+<li><a href="mypage.php">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -47,7 +47,7 @@
 <!--メインここから-->
 <div id="main">
 
-<img src="images/top.gif" width="600" height="250" />
+<img src="images/logo.png" width="600" height="250" />
 
 <!--パンくずリストここから-->
 <div class="pan"><a href="top.php">トップ</a> ＞ <a href="login.php">ログイン</a> </div>
@@ -74,14 +74,15 @@
 </div>
 <!--メインここまで-->
 
+
 <!--[if !IE]>サイドメニューここから<![endif]-->
 <div id="sub">
 
 <div class="category">
 <h3>アカウント</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">ログイン</a></div>
-<div class="sub-btn"><a href="#">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="login.php">ログイン</a></div>
+<div class="sub-btn"><a href="k_touroku.php">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -89,7 +90,7 @@
 <div class="category">
 <h3>お買い物かご</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">カートの中を見る</a></div>
+<div class="sub-btn"><a href="cart.php">カートの中を見る</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
@@ -112,6 +113,7 @@
 <div class="sub_bottom"></div>
 </div>
 
+
 </div>
 
 <!--[if !IE]>サイドメニューここまで<![endif]-->
@@ -122,8 +124,48 @@
 
 <!--サイドメニュー2ここから-->
 <div id="sub2">
+<div class="category">
+<h3>Brand</h3>
+<div class="entry_body">
+<ul>
+<li><a href="#4">Audio-technica</a></li>
+<li><a href="#4">SONY</a></li>
+<li><a href="#4">Panasonic</a></li>
+<li><a href="#4">ELECOM</a></li>
+<li><a href="#4">Pioneer</a></li>
+</ul>
+</div>
+<div class="sub_bottom"></div>
+</div>
 
+<div class="category">
+<h3>機能・特徴</h3>
+<div class="entry_body">
+<ul>
+<li><a href="#4">インナーイヤー</a></li>
+<li><a href="#4">カナル型</a></li>
+<li><a href="#4">Bluetooth</a></li>
+<li><a href="#4">スポーツ</a></li>
+<li><a href="#4">ノイズキャンセル</a></li>
+</ul>
+</div>
+<div class="sub_bottom"></div>
+</div>
 
+<div class="category">
+<h3>coler</h3>
+<div class="entry_body">
+<ul>
+<li><a href="#4">red</a></li>
+<li><a href="#4">blue</a></li>
+<li><a href="#4">green</a></li>
+<li><a href="#4">black</a></li>
+<li><a href="#4">white</a></li>
+<li><a href="#4">other</a></li>
+</ul>
+</div>
+<div class="sub_bottom"></div>
+</div>
 </div>
 <!--サイドメニュー2ここまで-->
 

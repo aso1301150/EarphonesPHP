@@ -16,12 +16,7 @@
 <div id="header_left2">I ❤ Earphones</div>
 <!--画像にしたい場合は上記の<div id="header_left2">を<div id="header_left">に変更して画像を入れてください-->
 <!--タイトルロゴここまで-->
-<div id="header_right">
-<ul>
-<li><a href="#">サイトマップ</a></li>
-<li><a href="#">お問い合わせ</a></li>
-</ul>
-</div>
+
 <div style="clear:both;"></div>
 </div>
 <!--ヘッダーここまで-->
@@ -47,11 +42,11 @@
 <div id="main">
 
 <!--パンくずリストここから-->
-<div class="pan"><a href="#01">トップ</a> ＞ <a href="#01">カテゴリ</a> ＞ </div>
+<div class="pan"><a href="top.php">トップ</a> ＞ <a href="search.php">カテゴリ</a>  </div>
 <!--パンくずリストここまで-->
 
 <div class="category">
-<h2 class="h2_normal">絞り込み検索</h2>
+<h2 class="h2_normal">商品検索</h2>
 <div class="entry_body">
 
 <div class="box2">
@@ -111,7 +106,7 @@
 <h3>アカウント</h3>
 <div class="entry_body">
 <div class="sub-btn"><a href="login.php">ログイン</a></div>
-<div class="sub-btn"><a href="frst.php">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="k_touroku.php">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>

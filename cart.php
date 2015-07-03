@@ -28,7 +28,7 @@
 <li><a href="k_touroku.php">会員登録</a></li>
 <li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="maypage.php">会員情報</a></li>
+<li><a href="mypage.php">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -86,20 +86,20 @@
 </table>
 
 
-<h2><font color="#ff0000">商品数量：００点　　合計：￥００００</font></h2><br>
+<font color="#ff0000">商品数量：００点　　合計：￥００００</font><br>
 <input type="submit" value="　　支払画面に進む　　" style="background-color:#ff6347;">
 <br>
 <br>
 
-
-<h3><font color="#4169e1">会員登録をしている方のみポイントの加算・利用ができます。</font>
+<font color="#4169e1">会員登録をしている方のみポイントの加算・利用ができます。</font>
 <input type="submit" value="会員登録">
 <br>
-</form>
 
 
 <div class="modoru"><a href="#top">ページ上に戻る</a></div>
 
+</div>
+</div>
 </div>
 <!--メインここまで-->
 
@@ -111,7 +111,7 @@
 <h3>アカウント</h3>
 <div class="entry_body">
 <div class="sub-btn"><a href="login.php">ログイン</a></div>
-<div class="sub-btn"><a href="frst.php">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="k_touroku.php">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
