@@ -17,12 +17,7 @@
 <div id="header_left2">I ❤ Earphones</div>
 <!--画像にしたい場合は上記の<div id="header_left2">を<div id="header_left">に変更して画像を入れてください-->
 <!--タイトルロゴここまで-->
-<div id="header_right">
-<ul>
-<li><a href="#">サイトマップ</a></li>
-<li><a href="#">お問い合わせ</a></li>
-</ul>
-</div>
+
 <div style="clear:both;"></div>
 </div>
 <!--ヘッダーここまで-->
@@ -31,10 +26,10 @@
 <div id="menu">
 <ul>
 <li><a href="top.php">トップページ</a></li>
-<li><a href="#2">会員登録</a></li>
-<li><a href="#3">商品検索</a></li>
+<li><a href="k_touroku.php">会員登録</a></li>
+<li><a href="search.php">商品検索</a></li>
 <li><a href="#4">comingsoon...</a></li>
-<li><a href="#5">会員情報</a></li>
+<li><a href="mypage.php">会員情報</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div><!--デザインが崩れるので削除しない事-->
@@ -48,7 +43,7 @@
 <div id="main">
 
 <!--パンくずリストここから-->
-<div class="pan"><a href="top.php">トップ</a> ＞ <a href="login.php">ログイン</a> </div>
+<div class="pan"><a href="top.php">トップ</a> ＞ <a href="k_touroku">会員登録</a>＞ <a href="login.php">購入最終確認</a> </div>
 <!--パンくずリストここまで-->
 
 <!-- 新規会員登録確認 -->
@@ -100,8 +95,8 @@
 <div class="category">
 <h3>アカウント</h3>
 <div class="entry_body">
-<div class="sub-btn"><a href="#">ログイン</a></div>
-<div class="sub-btn"><a href="#">はじめてのお客様</a></div>
+<div class="sub-btn"><a href="login.php">ログイン</a></div>
+<div class="sub-btn"><a href="k_touroku">はじめてのお客様</a></div>
 </div>
 <div class="sub_bottom"></div>
 </div>
